@@ -31,6 +31,6 @@ public class MainActivity extends AppCompatActivity {
         tinggi = Integer.parseInt((text_tinggi.getText().toString()));
         hasil = (tinggi-110);
         text_hasil.setText("Saudara " + edit_nama.getText() +
-                "\n" + "Berat badan ideal Anda adalah " + hasil + " kg.");
+                "\n" + "Berat badan ideal Anda adalah " + hasil + " kg.  ");
     }
 }
