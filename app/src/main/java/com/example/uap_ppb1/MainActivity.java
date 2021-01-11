@@ -12,25 +12,25 @@ public class MainActivity extends AppCompatActivity {
     int tinggi = 0;
     int hasil = 0;
 
-    TextView textHasil;
-    Button buttonHitung;
-    EditText textTinggi,editNama;
+    TextView text_hasil;
+    Button btn_hitung;
+    EditText text_tinggi,edit_nama;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editNama (EditText) findViewById(R.id.edit_nama);
-        textTinggi : (EditText) findViewById(R.id.edit_tinggi);
-        textHasil = (TextView) findViewById(R.id.text_hasil):
-        buttonHitung = (Button findViewById(R.id.btn_hitung);
+        edit_nama = (EditText) findViewById(R.id.edit_nama);
+        text_tinggi = (EditText) findViewById(R.id.edit_tinggi);
+        text_hasil = (TextView) findViewById(R.id.text_hasil);
+        btn_hitung = (Button) findViewById(R.id.btn_hitung);
     }
 
     public void hitung (View view){
-        tinggi = Integer.parseInt((textTinggi.getText().toString()));
+        tinggi = Integer.parseInt((text_tinggi.getText().toString()));
         hasil = (tinggi-110);
-        textHasil.setText("Saudara " + editNama.getText() +
-                "\n" + "Berat badan ideal Anda adalah " + hasil + " kg.")
+        text_hasil.setText("Saudara " + edit_nama.getText() +
+                "\n" + "Berat badan ideal Anda adalah " + hasil + " kg.");
     }
 }

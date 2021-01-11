@@ -22,10 +22,10 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:id="@+id/text_nama"
-        android:layout_below="@id/text_judul"/
+        android:layout_below="@id/text_judul"/>
 
     <EditText
-        android:layout_widtht="300sp"
+        android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_below="@id/text_nama"
